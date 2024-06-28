@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class CommonElementOfTwoDifferentArray {
     public static int[] insertion(int[] a, int[] b) {
         int count = 0;
@@ -32,6 +34,7 @@ public class CommonElementOfTwoDifferentArray {
     public static void main(String[] args) {
         int[] array1 = {1, 2, 3, 4, 5};
         int[] array2 = {4, 5, 6, 7, 8};
+        System.out.print("print of elements array1 and array2"+ Arrays.toString(array1)+ " ,"+Arrays.toString(array2));
 
         int[] commonElements = insertion(array1, array2);
 

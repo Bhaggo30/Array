@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ReverseArray {
@@ -10,9 +11,21 @@ public class ReverseArray {
         for (int i =0; i<arr.length;i++){
             arr[i] = sc.nextInt();
         }
-        System.out.println("after reverse the elemnt in array is :-");
-        for (int i= arr.length-1; i>=0; i--){
-            System.out.print(arr[i]+ " ,");
+          int i=0;
+          int j= arr.length-1;
+          while(i<j)
+          {
+              int temp=arr[i];
+              arr[i]=arr[j];
+              arr[j]=temp;
+              i++;
+              j--;
+          }
+        System.out.println("after reverse the element in array is :-");
+        for ( i= 0;i<arr.length;i++){
+            System.out.print(arr[i]+ " ");
         }
+
+      //  System.out.println(Arrays.toString(arr));
     }
 }

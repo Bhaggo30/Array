@@ -1,0 +1,43 @@
+public class CommonElementOfTwoDifferentArray {
+    public static int[] insertion(int[] a, int[] b) {
+        int count = 0;
+
+        // First pass: count common elements
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b.length; j++) {
+                if (a[i] == b[j]) {
+                    count++;
+                    break;
+                }
+            }
+        }
+
+        // Create the result array with the correct size
+        int[] commonElements = new int[count];
+        int index = 0;
+
+        // Second pass: populate the result array
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b.length; j++) {
+                if (a[i] == b[j]) {
+                    commonElements[index++] = a[i];
+                    break;
+                }
+            }
+        }
+
+        return commonElements;
+    }
+
+    public static void main(String[] args) {
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {4, 5, 6, 7, 8};
+
+        int[] commonElements = insertion(array1, array2);
+
+        System.out.print("Common elements: ");
+        for (int element : commonElements) {
+            System.out.print(element + " ");
+        }
+    }
+}

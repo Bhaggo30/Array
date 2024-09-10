@@ -3,9 +3,13 @@ import java.util.Scanner;
 public class PallindromeArray {
     public static int countPallindrome(int [] array){
         int count =0;
-        for (int num : array){
-            if (isPallindrome(num)){
+        for (int i =0; i<array.length; i++){
+            if (isPallindrome(array[i])){
+                System.out.println("number is pallindrome "+array[i]);
                 count++;
+            }
+            else{
+                System.out.println(array[i]+ "number is not pallindrome");
             }
         }
         return count;
@@ -16,7 +20,7 @@ public class PallindromeArray {
         while (num !=0){
             int digit = num %10;
             reverse = reverse *10 +digit;
-            num/=10;
+            num = num /10;
 
         }
         return original==reverse;
@@ -32,6 +36,7 @@ public class PallindromeArray {
             array[i] = scanner.nextInt();
         }
         int pallindromecount = countPallindrome(array);
-        System.out.println("number of pallindrome in an array is "+pallindromecountg);
+        System.out.println("number of pallindrome in an array is "+pallindromecount);
+        System.out.println("number is pallindrome"+isPallindrome(pallindromecount));
     }
 }

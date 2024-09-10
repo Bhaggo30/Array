@@ -12,14 +12,11 @@ public class BubbleSort {
                     arr[j+1]=temp;
                 }
             }
-
-
         }
         System.out.println("After sorting");
         for(int k=0;k<arr.length;k++)
         {
-            System.out.println(arr[k]);
+            System.out.println(arr[k]+ " ");
         }
     }
-
 }

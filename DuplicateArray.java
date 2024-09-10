@@ -3,7 +3,6 @@ import java.util.Set;
 
 public class DuplicateArray {
     public static void main(String[] args) {
-
         int [] arr ={1,3,5,6,7,3,1,};
         Set<Integer> uniqueNumber = new HashSet<Integer>();
         boolean isDuplicateExit = false;

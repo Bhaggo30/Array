@@ -8,7 +8,7 @@ public class ThirdLargest {
         }
         int secondLargest=Integer.MIN_VALUE;
         for (int i =0;i<array.length;i++){
-            if(array[i]>secondLargest&&array[i]<firstLargest)
+            if(array[i]>secondLargest && array[i]<firstLargest)
                 secondLargest=array[i];
         }
         int thirdLargest=Integer.MIN_VALUE;

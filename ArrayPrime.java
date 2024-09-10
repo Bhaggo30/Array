@@ -1,5 +1,4 @@
 public class ArrayPrime {
-
         public static boolean isPrime(int val)
         {
             boolean flag=true;

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class SecondSmallest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter the array elemnt");
+        System.out.println("enter the size elemnt");
         int n = scanner.nextInt();
         int[] array_Small = new int[n];
         System.out.println("enter the array element");

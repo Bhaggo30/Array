@@ -24,7 +24,6 @@ public class FirstTwoBiggestArray {
           System.out.println("first biggest elemnt "+firstBiggest);
           System.out.println("second biggest elemnt "+ secondBiggest);
 
-
       }
       }
 

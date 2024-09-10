@@ -3,8 +3,6 @@ import java.util.Arrays;
 public class CommonElementOfTwoDifferentArray {
     public static int[] insertion(int[] a, int[] b) {
         int count = 0;
-
-        // First pass: count common elements
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < b.length; j++) {
                 if (a[i] == b[j]) {
@@ -13,12 +11,8 @@ public class CommonElementOfTwoDifferentArray {
                 }
             }
         }
-
-        // Create the result array with the correct size
         int[] commonElements = new int[count];
         int index = 0;
-
-        // Second pass: populate the result array
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < b.length; j++) {
                 if (a[i] == b[j]) {
@@ -38,7 +32,7 @@ public class CommonElementOfTwoDifferentArray {
 
         int[] commonElements = insertion(array1, array2);
 
-        System.out.print("Common elements: ");
+        System.out.println("Common elements: ");
         for (int element : commonElements) {
             System.out.print(element + " ");
         }

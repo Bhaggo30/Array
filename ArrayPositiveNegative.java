@@ -7,6 +7,7 @@ public class ArrayPositiveNegative {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
                 countp++;
+                System.out.println(arr[i]+ " ");
             }
         }
 
@@ -16,6 +17,7 @@ public class ArrayPositiveNegative {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 0) {
                 countN++;
+                System.out.println(arr[i]+" " );
             }
         }
 
@@ -31,7 +33,7 @@ public class ArrayPositiveNegative {
             arr[i] = sc.nextInt();
         }
         apn.getPostive(arr);
-        System.out.println("postive array elemnt :- "+apn.countp);
+        System.out.println("postive array elemnt :- "+apn.countp+ " ");
         apn.getNegative(arr);
         System.out.println("negative element:- "+apn.countN);
     }

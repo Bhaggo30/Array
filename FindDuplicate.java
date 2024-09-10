@@ -11,7 +11,7 @@ public class FindDuplicate {
             }
             if (count == 1)
                 System.out.println(" duplicate element are :"+ arr[i] + " ");
-                count =0;
+                 count =0;
 
 
 

@@ -2,9 +2,8 @@ import java.util.Arrays;
 
 public class SortingArray {
     public static void main(String[] args) {
-
         int[] arr = new int[] { 16, 2022, 2001, 1997, 7 };
-        int temp = 0;
+        int temp ;
         System.out.println("Elements of original array are: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
@@ -22,7 +21,7 @@ public class SortingArray {
         System.out.println("Elements of array sorted in descending order is here: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
-            Arrays.sort(arr);
+           // Arrays.sort(arr);
         }
     }
     }

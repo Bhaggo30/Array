@@ -11,7 +11,7 @@ public class FrequencyArray {
             for (int j = i + 1; j < number.length; j++) {
                 if (number[i] == number[j]) {
                     count++;
-                    counted[j] = true; // number is counted already
+                    counted[j] = true;
                 }
             }
             System.out.println("Element " + number[i] + " occurs " + count + " times.");
